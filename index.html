@@ -13,29 +13,23 @@
       color: #222;
       scroll-behavior: smooth;
     }
-
     header {
       background-color: #0044cc;
       color: white;
       padding: 2rem;
       text-align: center;
     }
-
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-
     header p {
-      margin: 0.5rem 0 0;
+      margin-top: 0.5rem;
       font-size: 1.2rem;
     }
-
     section {
       padding: 2rem;
     }
-
-    /* About Section */
     .about {
       position: relative;
       background-image: url('https://chicagomaroon.com/wp-content/uploads/2020/07/last_of_us_part_ii-900x481.jpg');
@@ -44,15 +38,13 @@
       color: white;
       padding: 4rem 2rem;
     }
-
     .about::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
+      inset: 0;
       background-color: rgba(0, 0, 0, 0.6);
       z-index: 0;
     }
-
     .about-overlay {
       position: relative;
       z-index: 1;
@@ -64,52 +56,43 @@
       border-radius: 10px;
       backdrop-filter: blur(4px);
     }
-
-    /* Projects Section */
     .projects {
       background-color: #e6f0ff;
     }
-
-    .projects h2 {
-      text-align: center;
-    }
-
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
     }
-
     .project {
       background: white;
       border: 2px solid #0044cc;
       border-radius: 10px;
       padding: 1rem;
-      transition: transform 0.2s;
+      transition: transform 0.2s ease;
     }
-
     .project:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
       background-color: #d9e6ff;
     }
-
     .project h3 {
       margin-top: 0;
       color: #0044cc;
     }
-
-    .project p {
-      margin-bottom: 1rem;
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      background-color: #ffcc00;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: 600;
     }
-
-    .project iframe {
-      width: 100%;
-      height: 400px;
-      border: none;
-      border-radius: 10px;
+    .project a:hover {
+      background-color: #ffd633;
     }
-
     footer {
       background-color: #0044cc;
       color: white;
@@ -122,51 +105,49 @@
 <body>
 
   <header>
-    <h1>My Portfolio</h1>
-    <p>Mt. Eden High School Monarch</p>
+    <h1>Jabot Dixon</h1>
+    <p>Mt. Eden High School Monarch | Aspiring Cybersecurity Specialist</p>
   </header>
 
   <section class="about" id="about">
     <div class="about-overlay">
       <h2>About Me</h2>
       <p>
-        My name is Jabot Dixon and I am a Junior at Mt. Eden High School.
-        I enjoy hobbies such as listening to music and playing video games.
-        I hope to go into Cyber Security and make a great living doing what I love.
+        I'm a Junior at Mt. Eden High School. I love music, video games, and coding.
+        My goal is to build a career in Cyber Security where I can protect systems while doing what I love.
       </p>
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <h2>Projects</h2>
     <div class="project-grid">
       <div class="project">
         <h3>Password Generator</h3>
-        <p>An app that helps you create strong and secure passwords for your accounts.</p>
-        <iframe src="password-generator/index.html" title="Password Generator"></iframe>
+        <p>Create strong, secure passwords for your online accounts.</p>
+        <a href="https://ssjkomasan.github.io/password-generator/" target="_blank" rel="noopener">Try It</a>
       </div>
       <div class="project">
         <h3>Black Jack</h3>
-        <p>A simple and fun Black Jack game you can play right in your browser.</p>
-        <iframe src="blackjack/index.html" title="Blackjack Game"></iframe>
+        <p>Play a simple Black Jack game right in your browser.</p>
+        <a href="https://ssjkomasan.github.io/blackjack/" target="_blank" rel="noopener">Play It</a>
       </div>
       <div class="project">
         <h3>Calculator</h3>
-        <p>A classic calculator for basic arithmetic operations.</p>
-        <iframe src="calculator/index.html" title="Calculator App"></iframe>
+        <p>A calculator for basic math operations.</p>
+        <a href="https://ssjkomasan.github.io/calculator/" target="_blank" rel="noopener">Use It</a>
       </div>
       <div class="project">
         <h3>Guess the Flag</h3>
-        <p>Test your geography knowledge by guessing country flags.</p>
-        <iframe src="guess-the-flag/index.html" title="Guess the Flag Game"></iframe>
+        <p>Test your geography skills by guessing flags of the world.</p>
+        <a href="https://ssjkomasan.github.io/guess-the-flag/" target="_blank" rel="noopener">Play Now</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Jabot | Jabot's Website</p>
+    <p>© 2025 Jabot Dixon | Built with HTML & CSS | GitHub Pages</p>
   </footer>
 
 </body>
 </html>
-
