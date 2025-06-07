@@ -36,8 +36,8 @@ Try the Survival Game
 
 ## Links
 
-- **GitHub Repository:** [https://github.com/SSJKomasan/SSJKomasan.github.io](https://github.com/SSJKomasan/Project-Portfolio.github.io)
-- **Live Site on GitHub Pages:** [https://SSJKomasan.github.io/SSJKomasan.github.io/](https://SSJKomasan.github.io/Project-Portfolio.github.io/)
+- **GitHub Repository:** https://github.com/Jabot-D/Final-Project 
+- **Live Site on GitHub Pages:**https://jabot-d.github.io/Final-Project/
 
 ---
 
